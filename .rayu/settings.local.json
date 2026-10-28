@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for u:*)",
+      "Bash(do echo:*)",
+      "Bash(PGPASSWORD=\"\" psql -w -U \"$u\" -h 127.0.0.1 -p 5432 -d postgres -c \"select current_user, version\\(\\);\")",
+      "Bash(done)"
+    ]
+  }
+}
